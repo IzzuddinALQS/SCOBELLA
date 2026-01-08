@@ -133,7 +133,7 @@ class WelcomePopup extends HTMLElement {
             <span>❤️</span>
           </div>
           <h2>Dibuat dengan Hati, Untuk Kamu. <span class="heart">❤️</span></h2>
-          <p>Di <span class="brand-name">Fruit Leather Delight</span>, kami memulai segalanya dari sebuah mimpi untuk <span class="brand-purpose">membuat cemilan sehat tanpa pengawet untuk semua keluarga</span>. Terima kasih sudah mampir dan menjadi bagian dari cerita kami hari ini.</p>
+          <p>Di <span class="brand-name">SCOBELLA</span>, kami memulai segalanya dari sebuah mimpi untuk <span class="brand-purpose">membuat cemilan sehat tanpa pengawet untuk semua keluarga</span>. Terima kasih sudah mampir dan menjadi bagian dari cerita kami hari ini.</p>
           <button class="btn-start">Ayo Mulai!</button>
         </div>
       </div>
