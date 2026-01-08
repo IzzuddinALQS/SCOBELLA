@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fruit Leather Delight</title>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  </head>
+  <body class="bg-amber-50 text-gray-800">
+    <welcome-popup></welcome-popup>
+    <!-- Header -->
+    <header class="sticky top-0 z-50 bg-white shadow-md">
+      <div
+        class="container mx-auto px-4 py-3 flex justify-between items-center"
+      >
+        <div class="flex items-center">
+          <img
+            src="https://huggingface.co/spaces/IzzuddinALQS/fruit-leather-delight/resolve/main/images/Cuplikan layar 2026-01-07 114024.png"
+            alt="Fruit Leather Logo"
+            class="h-10 w-10 rounded-full"
+          />
+          <h1 class="ml-2 text-xl font-bold text-purple-700">
+            SCOBELLA
+          </h1>
+        </div>
+      </div>
+    </header>
+    <!-- Hero Section -->
+    <section class="relative bg-purple-700 text-white">
+      <div
+        class="container mx-auto px-4 py-20 md:py-32 flex flex-col items-center text-center"
+        data-aos="fade-up"
+      >
+        <h1
+          class="text-4xl md:text-6xl font-bold mb-4"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Cemilan Sehat Tanpa Pengawet untuk Semua Keluarga
+        </h1>
+        <p
+         class="text-xl mb-6 font-light" 
+    data-aos="fade-up" 
+    data-aos-delay="200"
+    style="line-height: 1.6; color: rgba(255, 255, 255, 0.9);"
+  >
+    Scobella menghadirkan inovasi camilan sehat yang melampaui standar nutrisi biasa dengan memadukan keajaiban fermentasi dan kesegaran alam. Kami memanfaatkan potensi luar biasa dari <strong>SCOBY kombucha</strong> yang kaya akan probiotik, di mana kandungan bakteriosin dan asam asetatnya berperan aktif sebagai agen antimikroba alami untuk menghambat pertumbuhan bakteri patogen seperti <em>Escherichia coli</em>.
+  </p>
+
+  <p 
+    class="text-xl mb-8 font-light" 
+    data-aos="fade-up" 
+    data-aos-delay="400"
+    style="line-height: 1.6; color: rgba(255, 255, 255, 0.9);"
+  >
+    Alih-alih membuang hasil fermentasi berharga ini, kami mengolahnya bersama sayuran segar menjadi <strong>Veggie Leather</strong>—camilan lembaran tipis yang lentur tanpa tambahan bahan aditif. Melalui proses pengolahan khusus, Scobella mempertahankan keutuhan zat gizi untuk kelezatan fungsional yang mendukung kesehatan pencernaan sekaligus memberikan perlindungan tubuh yang optimal.
+  </p>
+        <!-- <div
+          class="flex flex-col sm:flex-row gap-4"
+          data-aos="fade-up"
+          data-aos-delay="300"
+        >
+          <a
+            href="#"
+            class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-full transition transform hover:scale-105"
+            >Lihat Produk</a
+          >
+          <a
+            href="#"
+            class="bg-transparent border-2 border-white hover:bg-white hover:text-purple-700 text-white font-bold py-3 px-6 rounded-full transition transform hover:scale-105"
+            >Pelajari Lebih Lanjut</a
+          >
+        </div> -->
+      </div>
+    </section>
+    <!-- Product Showcase -->
+    <section class="py-16 bg-white">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+          Produk Kami
+        </h2>
+        <div class="flex justify-center">
+          <div class="w-full max-w-2xl">
+            <!-- Fruit Leather Product -->
+            <product-card
+              name="SCOBELLA"
+              description="Camilan Inovatif Veggie Leather Bahan Dasar Kombucha dan Kol Ungu"
+              price="Rp 6.000"
+              image="https://huggingface.co/spaces/IzzuddinALQS/fruit-leather-delight/resolve/main/images/scobella.jpeg"
+            >
+            </product-card>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Benefits Section -->
+    <section class="py-16 bg-amber-50">
+      <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center mb-12" data-aos="fade-up">
+          Manfaat Produk Kami
+        </h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div
+            class="text-center p-6 bg-white rounded-xl shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div
+              class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i data-feather="shield" class="text-purple-700 w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Meningkatkan Imunitas</h3>
+            <p class="text-gray-600">
+              Membantu memperkuat sistem kekebalan tubuh secara alami
+            </p>
+          </div>
+          <div
+            class="text-center p-6 bg-white rounded-xl shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="200"
+          >
+            <div
+              class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i data-feather="heart" class="text-purple-700 w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Menjaga Jantung</h3>
+            <p class="text-gray-600">
+              Mengurangi kadar kolesterol jahat dan menjaga kesehatan
+              kardiovaskular
+            </p>
+          </div>
+          <div
+            class="text-center p-6 bg-white rounded-xl shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="300"
+          >
+            <div
+              class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i data-feather="activity" class="text-purple-700 w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Anti-inflamasi</h3>
+            <p class="text-gray-600">
+              Mengurangi peradangan berlebih dalam tubuh
+            </p>
+          </div>
+          <div
+            class="text-center p-6 bg-white rounded-xl shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="400"
+          >
+            <div
+              class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i data-feather="droplet" class="text-purple-700 w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Probiotik Alami</h3>
+            <p class="text-gray-600">
+              Mengandung bakteriosin dan asam asetat yang berfungsi sebagai agen
+              antimikroba
+            </p>
+          </div>
+          <div
+            class="text-center p-6 bg-white rounded-xl shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="500"
+          >
+            <div
+              class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i data-feather="coffee" class="text-purple-700 w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Tanpa Bahan Aditif</h3>
+            <p class="text-gray-600">
+              Dibuat tanpa tambahan bahan pengawet atau perisa buatan
+            </p>
+          </div>
+          <div
+            class="text-center p-6 bg-white rounded-xl shadow-md"
+            data-aos="fade-up"
+            data-aos-delay="600"
+          >
+            <div
+              class="w-16 h-16 bg-purple-100 rounded-full flex items-center justify-center mx-auto mb-4"
+            >
+              <i data-feather="users" class="text-purple-700 w-8 h-8"></i>
+            </div>
+            <h3 class="text-xl font-bold mb-2">Untuk Semua Usia</h3>
+            <p class="text-gray-600">
+              Aman dan sehat dikonsumsi oleh anak-anak, remaja, dewasa, hingga
+              lansia
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fun Fact Section -->
+    <section class="py-16 bg-purple-700 text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-8" data-aos="fade-up">
+          Fakta Menarik
+        </h2>
+        <div
+          class="max-w-3xl mx-auto bg-white bg-opacity-10 rounded-xl p-8 backdrop-blur-sm"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          <div class="flex justify-center mb-6">
+            <div
+              class="w-16 h-16 bg-amber-500 rounded-full flex items-center justify-center"
+            >
+              <i data-feather="info" class="text-white w-8 h-8"></i>
+            </div>
+          </div>
+          <p class="text-xl italic">
+            "SCOBY dari kombucha tidak hanya sebagai starter fermentasi, tapi
+            juga menghasilkan bakteriosin dan asam asetat yang berfungsi sebagai
+            agen antimikroba, sehingga dapat menghambat pertumbuhan bakteri
+            patogen seperti Escherichia coli sehingga tidak perlu dibuang dan
+            bisa diolah menjadi camilan sehat yang kaya probiotik"
+          </p>
+          <p class="mt-6 font-bold">(Mawarno et al., 2025)</p>
+        </div>
+      </div>
+    </section>
+    <!-- CTA Section -->
+    <section class="py-16 bg-purple-700 text-white">
+      <div class="container mx-auto px-4 text-center">
+        <h2 class="text-3xl font-bold mb-4" data-aos="fade-up">
+          Siap untuk Mencoba?
+        </h2>
+        <p
+          class="text-xl mb-8 max-w-2xl mx-auto"
+          data-aos="fade-up"
+          data-aos-delay="100"
+        >
+          Bergabunglah dengan kami dan nikmati camilan
+          sehat setiap hari
+        </p>
+        <div
+          class="flex flex-col sm:flex-row justify-center gap-4"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
+          <!-- <a
+            href="#"
+            class="bg-amber-500 hover:bg-amber-600 text-white font-bold py-3 px-6 rounded-full transition transform hover:scale-105"
+            >Beli Sekarang</a
+          > -->
+          <a
+            href="https://wa.me/6285697303168"
+            class="bg-transparent border-2 border-white hover:bg-white hover:text-purple-700 text-white font-bold py-3 px-6 rounded-full transition transform hover:scale-105"
+            >Hubungi Kami</a
+          >
+        </div>
+      </div>
+    </section>
+    <!-- Footer -->
+    <!-- <footer class="bg-gray-800 text-white py-12">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Fruit Leather Delight</h3>
+            <p class="text-gray-400">
+              Cemilan sehat tanpa pengawet untuk semua keluarga
+            </p>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Navigasi</h4>
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Home</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Produk</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white"
+                  >Tentang Kami</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Blog</a>
+              </li>
+              <li>
+                <a href="#" class="text-gray-400 hover:text-white">Kontak</a>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Kontak</h4>
+            <ul class="space-y-2 text-gray-400">
+              <li class="flex items-start">
+                <i data-feather="map-pin" class="w-5 h-5 mr-2"></i>
+                <span>Jl. Buah Sehat No. 123, Jakarta</span>
+              </li>
+              <li class="flex items-center">
+                <i data-feather="phone" class="w-5 h-5 mr-2"></i>
+                <span>+62 812 3456 7890</span>
+              </li>
+              <li class="flex items-center">
+                <i data-feather="mail" class="w-5 h-5 mr-2"></i>
+                <span>info@fruitleather.com</span>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="font-bold mb-4">Ikuti Kami</h4>
+            <div class="flex space-x-4">
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i data-feather="facebook" class="w-6 h-6"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i data-feather="instagram" class="w-6 h-6"></i>
+              </a>
+              <a href="#" class="text-gray-400 hover:text-white">
+                <i data-feather="twitter" class="w-6 h-6"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400"
+        >
+          <p>&copy; 2023 Fruit Leather Delight. All rights reserved.</p>
+        </div>
+      </div>
+    </footer> -->
+
+    <!-- Floating WhatsApp Button -->
+    <a
+      href="https://wa.me/6285697303168"
+      target="_blank"
+      class="fixed bottom-6 right-6 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition z-50"
+    >
+      <i data-feather="message-circle" class="w-6 h-6"></i>
+    </a>
+    <script src="components/product-card.js"></script>
+    <script src="components/image-gallery.js"></script>
+    <script src="components/welcome-popup.js"></script>
+    <script src="script.js"></script>
+    <script>
+      feather.replace();
+      AOS.init({
+        duration: 1000,
+        once: true,
+      });
+    </script>
+    <script src="https://huggingface.co/deepsite/deepsite-badge.js"></script>
+  </body>
+</html>

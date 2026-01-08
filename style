@@ -1,0 +1,149 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+
+:root {
+  --primary-color: #7e22ce; /* Purple */
+  --secondary-color: #fef3c7; /* Amber */
+  --accent-color: #10b981; /* Green */
+}
+body {
+  font-family: "Poppins", sans-serif;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+/* Hero section background */
+.bg-purple-700 {
+  background: linear-gradient(135deg, #7e22ce 0%, #6d28d9 100%);
+}
+
+/* Floating WhatsApp button */
+.fixed {
+  transition: all 0.3s ease;
+}
+
+.fixed:hover {
+  transform: scale(1.1);
+}
+/* Product cards */
+.product-card {
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+.product-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+/* Benefits section icons */
+.benefit-icon {
+  transition: all 0.3s ease;
+}
+
+.benefit-icon:hover {
+  transform: scale(1.2);
+  background-color: #f0abfc !important;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+/* Testimonials */
+.testimonial-card {
+  transition: all 0.5s ease;
+}
+
+.testimonial-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
+    0 10px 10px -5px rgba(0, 0, 0, 0.04);
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .hero-content {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+
+  .hero-buttons {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .hero-buttons a {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Animation for elements appearing on scroll */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.animate-on-scroll.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5a189a;
+}
+
+/* Nutrition facts styling */
+.nutrition-facts {
+  background: #fef3c7;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  margin: 1rem 0;
+}
+
+.nutrition-facts h3 {
+  color: #7e22ce;
+  margin-bottom: 1rem;
+}
+
+.nutrition-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.nutrition-item:last-child {
+  border-bottom: none;
+}
+
+/* Fun fact section */
+.fun-fact {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  padding: 2rem;
+  text-align: center;
+  backdrop-filter: blur(10px);
+}
+
+.fun-fact p {
+  font-style: italic;
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
