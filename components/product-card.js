@@ -200,7 +200,7 @@ perspective: 1000px;
           <h3 class="title">${name}</h3>
           <p class="description">${description}</p>
           <span class="price">${price}</span>
-          <button class="button">Beli Sekarang</button>
+          <a href = "https://wa.me/6285697303168"><button class="button">Beli Sekarang</button></a>
         </div>
       </div>
       
